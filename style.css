@@ -7,3 +7,26 @@
     background-color: red;
     color: white;
 }
+.image{
+    height: 250px;
+    width: 400px;
+    /* background-image: url('./download.jpeg');
+    background-size: cover; */
+    background:linear-gradient(rgba(16, 1, 1, 0.228),rgba(0, 0, 0, 0.436),rgba(81, 152, 81, 0.203)), url('./download.jpeg') no-repeat;
+    /* margin: 100px 10px 200px 1000px;
+    padding: 100px 500px 10px 40px; */
+    
+}
+.imgText{
+    color: white;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin: 100px 300px 600px 800px;
+    padding: 10px 50px 100px 20px;
+    border: 3px dashed black;
+    border: none;
+    border-radius: 52%;
+}
