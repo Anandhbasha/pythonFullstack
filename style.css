@@ -24,9 +24,32 @@
     height: 200px;
     width: 200px;
     background-color: red;
-    margin: 100px 300px 600px 800px;
+    /* margin: 100px 300px 600px 800px; */
     padding: 10px 50px 100px 20px;
     border: 3px dashed black;
     border: none;
-    border-radius: 52%;
+    /* border-radius: 52%; */
+}
+
+.box{
+    /* position: relative; */
+    margin-top: 100px;
+    left: 500px;
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+}
+/* postion properties
+    fixed
+    sticky
+    static
+    relative
+    absolute
+*/
+.box1{
+    
 }

@@ -1,0 +1,74 @@
+.box{
+    background-color: red;
+    /* height: 100px;
+    width: 300px; */
+    /* margin: 5px; */
+}
+/* .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+    /* flex-direction: column; */
+    /* gap: 10px; */
+    /* height: 100vh; */
+    /* X axis */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; x axis center */
+    /* justify-content: space-evenly; */
+    /* Y axis */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    
+/* } */ 
+/* .boxes{
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    /* grid-template-columns: 100px 200px 500px; */
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-template-columns: repeat(3,minmax(150px,1fr)); */
+    /* grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); */
+    /* grid-template-rows: 100px 200px 50px 60px; */
+/* } */
+/* .box1{ */
+    /* grid-column: 1/3; */
+    /* grid-column: span 3; */
+/* } */ 
+
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "h h h"
+    "s c1 c1"
+    "s c2 c3"
+    "f f f";
+}
+.header{
+    grid-area: h;
+    background-color: purple;
+}
+.sidebar{
+    grid-area: s;
+    background-color: blue;
+}
+.content1{
+    grid-area: c1;
+    background-color: red;
+}
+.content2{
+    grid-area: c2;
+    background-color: yellow;
+}
+.content3{
+    grid-area: c3;
+    background-color: hotpink;
+}
+.footer{
+    grid-area: f;
+    background-color: purple;
+}
