@@ -1,9 +1,29 @@
-.box{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* .box{
     background-color: red;
-    /* height: 100px;
-    width: 300px; */
+     height: 100px;
+    width: 300px; 
+    /* box-shadow: 2px 10px 20px 50px black; */
+    /* opacity: .5; */
+    /* transition: 3s ease; */
     /* margin: 5px; */
+/* } */
+.box:hover{
+    transition: 3s ease;
+    background-color: rgb(5, 254, 104);
 }
+h1::after{
+    content: "xyz";
+} */
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    text-transform: lowercase;
+    letter-spacing: 12px;
+    font-size:50px;
+    text-shadow: 2px -10px red;
+}
+
 /* .boxes{
     display: flex;
     flex-wrap: wrap;
@@ -48,9 +68,12 @@
     "s c2 c3"
     "f f f";
 }
+/* .grid:nth-child(odd){
+    background-color: aqua;
+} */
 .header{
     grid-area: h;
-    background-color: purple;
+    /* background-color: purple; */
 }
 .sidebar{
     grid-area: s;
@@ -71,4 +94,10 @@
 .footer{
     grid-area: f;
     background-color: purple;
+}
+
+.box:first-child{
+    background-color: purple;
+    height: 100px;
+    width: 100px;
 }
