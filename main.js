@@ -130,62 +130,62 @@
 //     total(88,95,60,72,88)
 //     total(80,90,60,72,68)
 //     total(80,90,60,52,88)
-//     total(80,90,40,72,88)
-//     total(80,90,88,72,88)
-//     total(80,90,91,72,88)
+// //     total(80,90,40,72,88)
+// //     total(80,90,88,72,88)
+// //     total(80,90,91,72,88)
 
-//statements
-    // if
-        let age = 18
-        if(age<18){
-            console.log("He is Adult");            
-        }
-    // ifelse
-        if(age<=18){
-            console.log("He is Adult");            
-        }
-        else{
-            console.log("He is Teenager");            
-        }
-    // elseif
-        if(age>18){
-            console.log("He is Adult");            
-        }
-        else if(age<10){
-            console.log("He is Child");            
-        }
-        else{
-            console.log("Teenager");
+// //statements
+//     // if
+//         let age = 18
+//         if(age<18){
+//             console.log("He is Adult");            
+//         }
+//     // ifelse
+//         if(age<=18){
+//             console.log("He is Adult");            
+//         }
+//         else{
+//             console.log("He is Teenager");            
+//         }
+//     // elseif
+//         if(age>18){
+//             console.log("He is Adult");            
+//         }
+//         else if(age<10){
+//             console.log("He is Child");            
+//         }
+//         else{
+//             console.log("Teenager");
             
-        }
-// case
-    // switch
-        let today = "wednesday"
-        switch(today){
-            case "Monday":
-                console.log("Today is monday");
-                break
-            case "Tuesday":
-                console.log("Today is tuesday");
-                break
-            case "wednesday":
-                console.log("Today is Wednesday");
-                break
-            case "Thursday":
-                console.log("Today is Thursday");
-                break
-            case "Friday":
-                console.log("Today is Friday");
-                break
-            case "Saturday":
-                console.log("Today is Saturday");
-                break
-            default:
-                console.log("Today is sunday");
+//         }
+// // case
+//     // switch
+//         let today = "wednesday"
+//         switch(today){
+//             case "Monday":
+//                 console.log("Today is monday");
+//                 break
+//             case "Tuesday":
+//                 console.log("Today is tuesday");
+//                 break
+//             case "wednesday":
+//                 console.log("Today is Wednesday");
+//                 break
+//             case "Thursday":
+//                 console.log("Today is Thursday");
+//                 break
+//             case "Friday":
+//                 console.log("Today is Friday");
+//                 break
+//             case "Saturday":
+//                 console.log("Today is Saturday");
+//                 break
+//             default:
+//                 console.log("Today is sunday");
                 
-        }
+//         }
 // loops
-let arr = [10,20,30,50,80]//
+//
 let a=0
         //while
             // console.log(arr[0]);
@@ -194,16 +194,53 @@ let a=0
             // console.log(arr[3]);
             // console.log(arr[4]);
             //0<5
-            while (a<arr.length) {
-                // arr[0]
-                console.log(arr[a]);
-                ++a
-                // a=1
-            }
+            // while (a<arr.length) {
+            //     // arr[0]
+            //     console.log(arr[a]);
+            //     ++a
+            //     // a=1
+            // }
             
         //do while
-            do{
-                console.log("Do while working");
+            // do{
+            //     console.log("Do while working");
                 
-            }while(10>15)
+            // }while(10>15)
         //for
+            // for(let i=arr.length-1;i>=0;i--){
+            //     console.log(arr[i]);                
+            // }
+            let arr = [10,20,30,50,80]
+            //for of
+            for(let i of arr){ 
+
+                // i=10 arr[0]
+                // i=20
+                console.log(i);                
+            }
+            //for in
+            for(let i in arr){ 
+
+                // i=10 arr[0]
+                // i=20
+                console.log(arr[i]);                
+            }
+            //foreach
+            arr.forEach((x)=>console.log(x))
+            //x=10
+            // x=20
+            let name = "Jambukeshwaran"
+            //J
+            //ja
+            //jam
+            //Jamb
+            // Jambukeshwaran
+
+            //n
+            //na
+            //nar
+
+            let b = [1,0,8,2,0]
+            // for loop
+
+            // [1,2,8,0,0]
