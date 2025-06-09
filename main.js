@@ -244,3 +244,43 @@ let a=0
             // for loop
 
             // [1,2,8,0,0]
+// funtion types
+    // Normal Function
+        function newOne(){
+            console.log("Normal function");            
+        }
+        newOne()
+    //arrow function
+       const arrow = ()=>{console.log("Arrow is working")}
+       arrow()
+    //IFFI
+    const IFFF = (function(){
+        console.log("IFFI is working");
+        
+    })
+    //ananoums
+    const ana = function(){}
+    ana()
+// MRF
+    arr.map((x)=>console.log(x))
+    //reduce
+    const total = arr.reduce((acc,sum)=>sum+acc)
+    console.log(total);
+    
+    //acc= 0
+    // sum = 10 = 0+10 = 10
+    // acc=10
+    //sum = 20 = 10+20 = 30
+    //acc = 30
+//filter
+    const fill = arr.filter((x)=>x%4==0)
+    console.log(fill);
+    
+//setTimeout
+    setTimeout(()=>{
+        console.log("SetTimeout");        
+    },2000)
+//setInterval
+setInterval(()=>{
+        console.log("setInterval");    
+    },2000)
