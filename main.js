@@ -193,94 +193,161 @@ let a=0
             // console.log(arr[2]);
             // console.log(arr[3]);
             // console.log(arr[4]);
-            //0<5
-            // while (a<arr.length) {
-            //     // arr[0]
-            //     console.log(arr[a]);
-            //     ++a
-            //     // a=1
-            // }
+//             //0<5
+//             // while (a<arr.length) {
+//             //     // arr[0]
+//             //     console.log(arr[a]);
+//             //     ++a
+//             //     // a=1
+//             // }
             
-        //do while
-            // do{
-            //     console.log("Do while working");
+//         //do while
+//             // do{
+//             //     console.log("Do while working");
                 
-            // }while(10>15)
-        //for
-            // for(let i=arr.length-1;i>=0;i--){
-            //     console.log(arr[i]);                
-            // }
-            let arr = [10,20,30,50,80]
-            //for of
-            for(let i of arr){ 
+//             // }while(10>15)
+//         //for
+//             // for(let i=arr.length-1;i>=0;i--){
+//             //     console.log(arr[i]);                
+//             // }
+//             let arr = [10,20,30,50,80]
+//             //for of
+//             for(let i of arr){ 
 
-                // i=10 arr[0]
-                // i=20
-                console.log(i);                
-            }
-            //for in
-            for(let i in arr){ 
+//                 // i=10 arr[0]
+//                 // i=20
+//                 console.log(i);                
+//             }
+//             //for in
+//             for(let i in arr){ 
 
-                // i=10 arr[0]
-                // i=20
-                console.log(arr[i]);                
-            }
-            //foreach
-            arr.forEach((x)=>console.log(x))
-            //x=10
-            // x=20
-            let name = "Jambukeshwaran"
-            //J
-            //ja
-            //jam
-            //Jamb
-            // Jambukeshwaran
+//                 // i=10 arr[0]
+//                 // i=20
+//                 console.log(arr[i]);                
+//             }
+//             //foreach
+//             arr.forEach((x)=>console.log(x))
+//             //x=10
+//             // x=20
+//             let name = "Jambukeshwaran"
+//             //J
+//             //ja
+//             //jam
+//             //Jamb
+//             // Jambukeshwaran
 
-            //n
-            //na
-            //nar
+//             //n
+//             //na
+//             //nar
 
-            let b = [1,0,8,2,0]
-            // for loop
+//             let b = [1,0,8,2,0]
+//             // for loop
 
-            // [1,2,8,0,0]
-// funtion types
-    // Normal Function
-        function newOne(){
-            console.log("Normal function");            
-        }
-        newOne()
-    //arrow function
-       const arrow = ()=>{console.log("Arrow is working")}
-       arrow()
-    //IFFI
-    const IFFF = (function(){
-        console.log("IFFI is working");
+//             // [1,2,8,0,0]
+// // funtion types
+//     // Normal Function
+//         function newOne(){
+//             console.log("Normal function");            
+//         }
+//         newOne()
+//     //arrow function
+//        const arrow = ()=>{console.log("Arrow is working")}
+//        arrow()
+//     //IFFI
+//     const IFFF = (function(){
+//         console.log("IFFI is working");
         
-    })
-    //ananoums
-    const ana = function(){}
-    ana()
-// MRF
-    arr.map((x)=>console.log(x))
-    //reduce
-    const total = arr.reduce((acc,sum)=>sum+acc)
-    console.log(total);
+//     })
+//     //ananoums
+//     const ana = function(){}
+//     ana()
+// // MRF
+//     arr.map((x)=>console.log(x))
+//     //reduce
+//     const total = arr.reduce((acc,sum)=>sum+acc)
+//     console.log(total);
     
-    //acc= 0
-    // sum = 10 = 0+10 = 10
-    // acc=10
-    //sum = 20 = 10+20 = 30
-    //acc = 30
-//filter
-    const fill = arr.filter((x)=>x%4==0)
-    console.log(fill);
+//     //acc= 0
+//     // sum = 10 = 0+10 = 10
+//     // acc=10
+//     //sum = 20 = 10+20 = 30
+//     //acc = 30
+// //filter
+//     const fill = arr.filter((x)=>x%4==0)
+//     console.log(fill);
     
-//setTimeout
-    setTimeout(()=>{
-        console.log("SetTimeout");        
-    },2000)
-//setInterval
-setInterval(()=>{
-        console.log("setInterval");    
-    },2000)
+// //setTimeout
+//     setTimeout(()=>{
+//         console.log("SetTimeout");        
+//     },2000)
+// //setInterval
+// setInterval(()=>{
+//         console.log("setInterval");    
+//     },2000)
+
+// array methods
+    // push
+        let arr1 = [100,200,300]
+        arr1.push(500)
+        console.log(arr1);
+        
+    // pop
+    arr1.pop()
+    console.log(arr1);
+    
+    // shift
+        arr1.shift()
+        console.log(arr1);
+        
+    // unshift
+    arr1.unshift(424)
+    console.log(arr1);
+    
+    //find
+    const finds = arr1.find((x)=>x==100)
+    console.log(finds);
+    
+    //indexof
+    console.log(arr1.indexOf(300));
+    
+    //split
+    const name = "Karthick-Raja"
+    newName = name.split("-")
+    console.log(newName);
+    
+    //slice
+    console.log(arr1.slice(1,2));
+    
+    //sort
+    console.log(arr1.sort());
+    
+    //spread
+    let arr2 = [500,700,900,621]
+    // let arr3 = arr1+arr2
+    // let arr3 = arr1
+    
+    // console.log(arr3);
+    // let arr3 = [arr1,arr2]
+    let arr3 = [...arr1,...arr2]
+    console.log(arr3);
+    
+    //rest
+    const [first,...xa] = arr3
+    console.log(first);
+    console.log(xa);
+    
+    
+    //destructure
+        const person2 = {
+            username:"hjghjhj",
+            age:22,
+            city:"CBE"
+        }
+        const {username,age} = person2
+        console.log(username);
+        console.log("User Age is: " + age);
+        //string concordenation
+        
+    //template literals
+    console.log(`User Age is: ${age}`);
+    
