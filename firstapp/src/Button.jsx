@@ -1,8 +1,17 @@
-function Button(props){
+// function Button(props){
+//     return(
+//         <div className="btn">
+//             <button>{props.value}</button>
+//             <button>{props.val}</button>
+//         </div>
+//     )
+// }
+// export default Button
+function Button({value,val}){
     return(
         <div className="btn">
-            <button>{props.value}</button>
-            <button>{props.val}</button>
+            <button>{value}</button>
+            <button>{val}</button>
         </div>
     )
 }
