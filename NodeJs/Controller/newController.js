@@ -1,4 +1,6 @@
 import newProd from "../Model/schema.js"
+import bcrypt from "bcryptjs"
+import jwt from 'jsonwebtoken'
 
 export const read = async(req,res)=>{
     try {
@@ -46,3 +48,53 @@ export const deleteValue = async(req,res)=>{
 }
 
 
+
+export const registerNew = async(req,res)=>{
+    try {
+        const {userEmail,userPassword,userMobile} = req.body
+        const exist = await newProd.findOne({userEmail})
+        if(exist){
+            return res.status(411).json({message:"user Already exist"})
+        }
+        const Salt = await bcrypt.genSalt(15)
+        const hassedPassword = await bcrypt.hash(userPassword,Salt)
+        const addNew = await newProd({userEmail:userEmail,userPassword:hassedPassword,userMobile:userMobile}).save()
+        return res.status(205).json({message:"Added succesfully",data:addNew})
+    } catch (error) {
+        return res.status(408).json(error)
+    }
+}
+
+export const loginUser = async(req,res)=>{
+    try {
+        const {userEmail,userPassword} = req.body
+        const exist = await newProd.findOne({userEmail})
+        if(!exist){
+            return res.status(411).json({message:"user Not exist"})
+        }
+        const match = await bcrypt.compare(userPassword,exist.userPassword)
+        if(!match){
+            return res.status(410).json({message:"Password Not match"})
+        }
+        const token = jwt.sign({userEmail},"abcedf",{expiresIn:"5m"})
+        return res.status(215).json({token,data:userEmail})
+    } catch (error) {
+        return res.status(425).json(error)
+    }
+}
+
+export const verifytoken = (req,res,next)=>{
+    try {
+        const authUser = req.headers['authorization']
+        if(!authUser){
+            return res.status(425).json("Access denied")
+        }
+        const token = authUser.split(" ")[1]
+        const decode = jwt.verify(token,"abcedf")
+        req.user = decode
+        next()
+
+    } catch (error) {
+        res.status(450).json(error)
+    }
+}
